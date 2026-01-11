@@ -1,66 +1,176 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Corporate Training Platform
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Project Overview
 
-## About Laravel
+This project presents the design and development of a web-based corporate training platform. The platform is designed to enhance employee learning through improved usability, mobile compatibility, structured content management, effective tracking mechanisms, and robust security considerations.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+The system supports corporate learning through role-based interfaces for administrators, instructors, and students. Each user role is provided with access only to functionalities relevant to their responsibilities. The project follows a structured System Development Life Cycle (SDLC) using the Waterfall methodology, based on a clearly defined scope and stable requirements.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Key Features
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Role-based interfaces (Admin, Instructor, Student)
 
-## Learning Laravel
+- Course, module, and lesson management
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- Assignment upload, submission, grading, and resubmission
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- Course completion percentage tracking
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- Assignment-related notifications
 
-## Laravel Sponsors
+- Responsive layout for desktop, tablet, and mobile devices
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- Authentication and role-based access control
+  
+## User Roles and Interfaces
 
-### Premium Partners
+The system contains three distinct interfaces, each designed for a specific user role.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### Admin Interface
 
-## Contributing
+Administrators are responsible for overall system management, including:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- User registration
 
-## Code of Conduct
+- Course creation
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- Student and instructor enrollment
 
-## Security Vulnerabilities
+- Admin account management
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Instructor Interface
 
-## License
+The instructor interface supports instructional and assessment-related activities, including:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- Uploading, editing, and deleting modules, lessons, and assignments
+
+- Viewing and grading student assignment submissions
+
+- Tracking student progress and course completion
+
+- Managing enrolled students within assigned courses
+
+
+### Student Interface
+
+The student interface provides access to learning and submission features, including:
+
+- Accessing course materials (modules and lessons)
+
+- Submitting and resubmitting assignments
+
+- Viewing grades and course completion percentages
+
+- Receiving notifications related to assignments
+
+- Managing personal profile information
+
+Users are restricted to accessing only the interface associated with their assigned role. Attempts to access unauthorized pages result in redirection to the login page.
+
+## Development Approach
+
+- System Development Life Cycle (SDLC)
+
+- Waterfall methodology
+
+The Waterfall approach was selected due to:
+
+- Clearly defined project scope
+
+- Stable requirements
+
+- Predictable deliverables
+
+- Emphasis on documentation and structured development
+
+
+## Interface Design Considerations
+
+The platform incorporates the following design elements to support usability and consistency:
+
+- Visual hierarchy
+
+- Global navigation
+
+- Minimalistic layout
+
+- Well-captioned interface components
+
+- Responsive liquid layout
+
+- Error prevention and recovery mechanisms
+
+These design choices aim to support clarity, consistency, and ease of use across the system.
+
+## Core System Functionality
+
+The system provides the following core functionalities:
+
+- Course creation and management
+
+- Module and lesson navigation
+
+- Assignment upload, submission, grading, and resubmission
+
+- Course completion percentage calculation
+
+- Assignment-related notifications
+
+- Profile management and password updates
+
+- Authentication and role-based authorization
+
+- Tracking of assignment submissions and student grades
+  
+- Visual representation of progress using charts
+
+These features support instructors and administrators in reviewing learner activity and progress.
+
+## Database Design
+
+The system uses a relational database consisting of ten interconnected tables to manage:
+
+- User information
+
+- Courses and enrollments
+
+- Modules and lessons
+
+- Assignments and submissions
+
+- Student progress and grades
+
+Foreign key relationships are used to maintain data integrity and support data retrieval across the system.
+
+## Technology Stack
+
+### Frontend
+
+- HTML
+
+- CSS
+
+- Bootstrap
+
+- JavaScript
+
+### Backend
+
+- Laravel
+
+### Server & Database
+
+- Apache Web Server
+
+- PHPMyAdmin
+
+- Relational database
+  
+### Visualization
+
+- Chart.js
+
+
+## Conclusion
+
+This project documents the development of a corporate training platform designed using a structured SDLC approach and guided by usability and visual perception principles. By implementing role-based interfaces, structured navigation, and tracking features, the system supports core corporate training activities while maintaining a clear separation of responsibilities across user roles.
